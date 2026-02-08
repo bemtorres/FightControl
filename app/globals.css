@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Press+Start+2P&family=Inter:wght@400;700;900&family=Playfair+Display:wght@700&family=JetBrains+Mono&display=swap');
+
+.clip-path-slant-right {
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%, 50% 0);
+}
+
+.clip-path-slant-left {
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+}
+
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-russo: 'Russo One', sans-serif;
+  --font-press-start: 'Press Start 2P', cursive;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.font-sans {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-russo {
+  font-family: 'Russo One', sans-serif;
+}
+
+.font-press-start {
+  font-family: 'Press Start 2P', cursive;
+}
